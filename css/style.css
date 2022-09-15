@@ -59,7 +59,7 @@ button{
 }
 .data_box{
     
-    padding: 4rem;
+    padding: 4rem 1rem;
     background: white;
     width: 70rem;
     position: absolute;
@@ -67,10 +67,19 @@ button{
     z-index: 11111;
     color: black;
     display: flex;
+    border-top-left-radius: 24px;
+    line-height: 1.6;
+    padding-top: 1rem;
+    border-top-right-radius: 24px;
 
 }
+
 .data{
     margin: 2rem;
+}
+span {
+    font-size: 1.2rem;
+    color: gray;
 }
 /* map */
 #map { height: 100vh; }
