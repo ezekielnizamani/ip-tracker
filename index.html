@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+ integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+ crossorigin=""/>
+ 
+</head>
+<body>
+
+  <header class="header">
+    <h1>
+      IP Address Tracker
+    </h1>
+    <form action="#">
+      <input type="text" name="trackIp" id="trackIp" placeholder="Search for any IP address or domain">
+      <button type="submit" class="btn"><img src="images/icon-arrow.svg" alt="Search"></button>
+    </form>
+    <div class="data_box">
+      <div class="data ip">
+        <span>ip address</span>
+        <h3 class="ip_data"></h3>
+      </div>
+      <div class="data location">
+        <span>location</span>
+        <h3 class="location_data"></h3>
+      </div>
+      <div class="data timezone">
+        <span>timezone</span>
+        <h3 class="time_data"></h3>
+      </div>
+      <div class="data isp">
+        <span>isp</span>
+        <h3 class=" isp_data"></h3>
+      </div>
+    </div>
+  </header>
+
+  <div id='map'></div>
+
+  <!-- 
+
+  IP Address
+  Location
+  Timezone
+    UTC  add offset value dynamically using the API 
+   ISP -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+  <script src='https://unpkg.com/wicg-inert@latest/dist/inert.min.js'></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

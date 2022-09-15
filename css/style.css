@@ -1,0 +1,76 @@
+:root{
+    
+
+--very-dark-gray: hsl(0, 0%, 17%);
+--Dark-Gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 65.2%;
+}
+body{
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+.header{
+    background-image: url('../images/pattern-bg.png');
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+h1{
+    font-size: 2.6rem;
+}
+input{
+    border-radius: 9px;
+    border: none;
+    height: 4rem;
+    width: 50rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    
+}
+input:focus{
+    outline:none;
+}
+
+form{
+    position: relative;
+}
+button{
+    padding: 5px 2rem;
+    border-radius: 10px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 4rem;
+
+}
+.data_box{
+    
+    padding: 4rem;
+    background: white;
+    width: 70rem;
+    position: absolute;
+    bottom: -14rem;
+    z-index: 11111;
+    color: black;
+    display: flex;
+
+}
+.data{
+    margin: 2rem;
+}
+/* map */
+#map { height: 100vh; }
